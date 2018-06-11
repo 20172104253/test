@@ -53,12 +53,16 @@ void CMyFeet::display()
 }
 int main()
 {
-	CFeet *p;
-	p = new CMyFeet;
+	CMyFeet p;
+	p.setfeet(3);
+	p.setinches(8);
+	p.display();
+	p.CFeet::display();
+	/*p = new CMyFeet;
 	p->setfeet(3);
 	p->setinches(8);
 	p->display();
-	p->CFeet::display();
+	p->CFeet::display();*/
     return 0;
 }
 
